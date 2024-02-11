@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      transition: all .4s ease-in-out;
+    }
+
+    :root {
+      --light-red: hsl(0, 100%, 67%);
+      --orange-yellow: hsl(39, 100%, 56%);
+      --green-teal: hsl(166, 100%, 37%);
+      --cobalt-blue: hsl(234, 85%, 45%);
+
+      --light-slate-blue: hsl(252, 100%, 67%);
+      --light-royal-blue: hsl(241, 81%, 54%);
+      --Violet-blue: hsla(256, 72%, 46%, 1);
+      --persian-blue: hsla(241, 72%, 46%, 0);
+
+      --white: hsl(0, 0%, 100%);
+      --pale-blue: hsl(221, 100%, 96%);
+      --light-lavender: hsl(241, 100%, 89%);
+      --dark-gray-blue: hsl(224, 30%, 27%);
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 14px;
+    }
+
+    .container-component {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(0 0 0 / .1);
+    }
+
+    .component {
+      max-width: 375px;
+      width: 330px;
+      height: 400px;
+    }
+
+    .component.component-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+      padding: 2em 3em;
+      border-radius: 2em;
+      text-align: center;
+      color: var(--light-lavender);
+
+      & .result {
+        background-image: linear-gradient(var(--Violet-blue), var(--persian-blue));
+        /* padding: 1rem; */
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .large {
+          color: var(--white);
+          font-size: 40px;
+          font-weight: 700;
+          margin-bottom: 7px;
+        }
+      }
+    }
+
+    .component.component-2 {
+      padding: 0 2em;
+      border-radius: 0 2em 2em 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5em;
+
+      & label {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 1em;
+      }
+
+      & .items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & .item {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 10px;
+          border-radius: .5em;
+
+          & .name {
+            font-size: 13px;
+            font-weight: 600;
+          }
+
+          &.item-1 {
+            background-color: hsla(0, 100%, 67%, .05);
+
+            & .name {
+              color: var(--light-red);
+            }
+          }
+
+          &.item-2 {
+            background-color: hsla(39, 100%, 56%, .05);
+
+            & .name {
+              color: var(--orange-yellow);
+            }
+          }
+
+          &.item-3 {
+            background-color: hsla(166, 100%, 37%, .05);
+
+            & .name {
+              color: var(--green-teal);
+            }
+          }
+
+          &.item-4 {
+            background-color: hsla(234, 85%, 45%, .05);
+
+            & .name {
+              color: var(--cobalt-blue);
+            }
+          }
+        }
+
+        & button.item {
+          color: var(--white);
+          background-color: var(--dark-gray-blue);
+          border-radius: 2em;
+          border: none;
+          padding: 15px;
+          display: block;
+          font-weight: 600;
+          margin-top: 1em;
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--cobalt-blue);
+          }
+        }
+      }
+    }
+
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media (max-width: 750px) {
+      .container-component {
+        width: 375px;
+      }
+
+      .component {
+        height: 50vh;
+        width: 100%;
+      }
+
+      .component.component-1 {
+        border-radius: 0 0 2em 2em;
+        gap: 1em;
+      }
+    }
+
+    @media (max-width: 375px) {
+      .container-component {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .component {
+        width: 100%;
+      }
+
+      .component.component-2 {
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-component">
+    <div class="component component-1">
+      <h4>Your Result</h4>
+      <div class="result">
+        <span class="large">76</span>
+        <span>of 100</span>
+      </div>
+      <h3>Great</h3>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="component component-2">
+      <label for="">Summary</label>
+      <div class="items">
+        <div class="item item-1">
+          <span class="name">Reaction</span>
+          <span class="score">
+            <b>80</b> / 100
+          </span>
+        </div>
+        <div class="item item-2">
+          <span class="name">Memory</span>
+          <span class="score">
+            <b>92</b> / 100
+          </span>
+        </div>
+        <div class="item item-3">
+          <span class="name">Verbal</span>
+          <span class="score">
+            <b>61</b> / 100
+          </span>
+        </div>
+        <div class="item item-4">
+          <span class="name">Visual</span>
+          <span class="score">
+            <b>71</b> / 100
+          </span>
+        </div>
+        <button class="item">Continue</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
