@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+    :root {
+      --orange: hsl(25, 97%, 53%);
+      --white: hsl(0, 0%, 100%);
+      --light-grey: hsl(217, 12%, 63%);
+      --medium-grey: hsl(216, 12%, 54%);
+      --dark-blue: hsl(213, 19%, 18%);
+      --very-dark-blue: hsl(216, 12%, 8%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Overpass", sans-serif;
+    }
+
+    body {
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      padding: 1.5rem;
+      background-color: var(--very-dark-blue);
+      color: var(--white);
+    }
+
+    .container {
+      max-width: 500px;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      height: 350px;
+
+      &.active .content {
+        transform: rotateY(180deg);
+      }
+    }
+
+    .content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+    }
+
+    .rating-state,
+    .thank-you-state {
+      padding: 1.5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      backface-visibility: hidden;
+      gap: 1.2em;
+      background-image: linear-gradient(to top right, var(--very-dark-blue), var(--dark-blue));
+      border: 1px solid var(--dark-blue);
+
+      & p {
+        color: var(--light-grey)
+      }
+    }
+
+    .rating-state {
+      /* display: none; */
+      position: absolute;
+
+      & .rating-numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & span.active {
+          background-color: var(--medium-grey);
+          color: white;
+          transition: all 400ms ease;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        &>span:not(.active):is(:hover, :active) {
+          cursor: pointer;
+          background-color: var(--orange);
+          color: var(--white);
+          transition: 400ms ease;
+        }
+      }
+
+      & span {
+        font-size: 1.2em;
+        color: var(--light-grey);
+        background-color: var(--dark-blue);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 55px;
+      }
+
+      & .star-icon {
+        background: var(--dark-blue);
+      }
+
+      & button {
+        background-color: var(--orange);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-radius: 2em;
+        border: none;
+        padding: 1em;
+        color: var(--white);
+        font-weight: 700;
+
+        &:is(:hover, :active) {
+          cursor: pointer;
+          background-color: var(--white);
+          color: var(--orange);
+          transition: 400ms ease;
+        }
+      }
+
+    }
+
+    .thank-you-state {
+      /* display: none; */
+      position: absolute;
+      align-items: center;
+      text-align: center;
+      transform: rotateY(180deg);
+
+      & img {
+        width: 150px;
+      }
+
+      & .selected-con {
+        color: var(--orange);
+        background-color: var(--dark-blue);
+        border-radius: 1em;
+        padding: .5em .75em;
+      }
+    }
+
+    @media (max-width: 375px) {
+
+      .rating-state,
+      .thank-you-state {
+        padding: .5em;
+      }
+    }
+
+
+    .attribution {
+      position: absolute;
+      bottom: 2em;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: var(--orange);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="content">
+      <!-- Rating state start -->
+      <div class="rating-state">
+        <span class="star-icon">
+          <img src="./images/icon-star.svg" alt="">
+        </span>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+        <div class="rating-numbers">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+        </div>
+        <button type="submit">Submit</button>
+      </div>
+      <!-- Rating state end -->
+      <div class="thank-you-state">
+        <img src="./images/illustration-thank-you.svg" alt="">
+        <div class="selected-con">
+          You selected
+          <span id="result">0</span>
+          out of 5
+        </div>
+        <h1>Thank you!</h1>
+        <p>we appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/arise-aizen-404/" target="_blank">Arise Aizen</a>.
+  </div>
+
+  <script>
+    const stars = document.querySelectorAll(".rating-numbers span")
+    const containerEle = document.querySelector('.container')
+    const resultEl = document.getElementById("result")
+    const submitBtn = document.querySelector('button[type="submit"]')
+    stars.forEach(star => star.addEventListener('click', (e) => {
+      stars.forEach(star => star.classList.remove('active'))
+      star.classList.add('active')
+    }))
+    submitBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      let check = false;
+      stars.forEach(star => {
+        if (star.classList.contains('active')) {
+          check = true
+          resultEl.innerText = star.innerText
+        }
+      })
+      if (check === true)
+        containerEle.classList.add('active')
+    })
+  </script>
+
+</body>
+
+</html>
