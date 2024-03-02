@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+    :root {
+      --soft-blue: hsl(215, 51%, 70%);
+      --cyan: hsl(178, 100%, 50%);
+
+      --white: hsl(0, 0%, 100%);
+      --main-bg: hsl(217, 54%, 11%);
+      --card-bg: hsl(216, 50%, 16%);
+      --line: hsl(215, 32%, 27%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Outfit", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: var(--white);
+      font-size: 15px;
+      background-color: var(--main-bg);
+      padding: 1.5rem;
+    }
+
+    p {
+      color: var(--soft-blue);
+    }
+
+    .card {
+      border-radius: 10px;
+      padding: 1.5rem;
+      max-width: 375px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: var(--card-bg);
+
+      & .title:hover {
+        cursor: pointer;
+        color: var(--cyan);
+        transition: color 400ms ease;
+      }
+
+      & .img-con {
+        position: relative;
+        border-radius: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background-color: var(--cyan);
+          opacity: 0.5;
+          display: none;
+          border-radius: inherit;
+        }
+
+        & .eye {
+          position: absolute;
+          font-size: 4em;
+          z-index: 10;
+          display: none;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:is(:hover)::after,
+        &:is(:hover) .eye {
+          display: block;
+          transition: all 400ms ease;
+        }
+      }
+
+      & img {
+        max-width: 100%;
+        border-radius: inherit;
+        display: block;
+      }
+
+
+      & .price-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--soft-blue);
+
+        & .price {
+          color: var(--cyan);
+        }
+      }
+
+      & .author-con {
+        border-top: 1px solid var(--line);
+        padding-top: 1em;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        & img {
+          width: 35px;
+          border: 1px solid var(--white);
+          border-radius: 50%;
+        }
+
+        & p span {
+          color: var(--white);
+
+          &:hover {
+            cursor: pointer;
+            color: var(--cyan);
+            transition: color 400ms ease;
+          }
+        }
+      }
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="img-con">
+      <img src="./images/image-equilibrium.jpg" alt="">
+      <div class="eye">
+        <i class="fa-solid fa-eye"></i>
+      </div>
+    </div>
+    <h2 class="title">
+      Equilibrium #3429
+    </h2>
+    <p>
+      Our Equilibrium collection promotes balance and calm.
+    </p>
+    <div class="price-con">
+      <span class="price">
+        <i class="fa-brands fa-ethereum"></i>
+        &nbsp;
+        0.041 ETH
+      </span>
+      <span class="days-left">
+        <i class="fa-solid fa-clock"></i>
+        &nbsp;
+        3 days left
+      </span>
+    </div>
+    <div class="author-con">
+      <img src="./images/image-avatar.png" alt="">
+      <p>
+        Creation of <span>Jules Wyvern</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+</body>
+
+</html>
