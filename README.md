@@ -2,17 +2,17 @@
 
 | Project Name                        | Live Demo |
 |------------------------------------ |-----------|
-| 3-column-preview-card-component-main | [Live Demo](#3-column-preview-card-demo)          |
-| blog-preview-card-main              | [Live Demo](#blog-preview-card-demo)             |
-| calculator-app-main                 | [Live Demo](#calculator-app-demo) |
-| faq-accordion-main                  | [Live Demo](#faq-accordion-demo) |
-| interactive-rating-component-main   | [Live Demo](#interactive-rating-component-demo) |
-| nft-preview-card-component-main     | [Live Demo](#nft-preview-card-component-demo) |
-| product-preview-card-component-main | [Live Demo](#product-preview-card-component-demo) |
-| qr-code-component-main              | [Live Demo](#qr-code-component-demo) |
-| recipe-page-main                    | [Live Demo](#recipe-page-demo) |
-| results-summary-component-main      | [Live Demo](#results-summary-component-demo) |
-| social-links-profile-main           | [Live Demo](#social-links-profile-demo) |
+| 3-column-preview-card-component-main | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/3-column-preview-card-component-main/)          |
+| blog-preview-card-main              | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/blog-preview-card-main/)             |
+| calculator-app-main                 | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/calculator-app-main/) |
+| faq-accordion-main                  | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/faq-accordion-main/) |
+| interactive-rating-component-main   | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/interactive-rating-component-main/) |
+| nft-preview-card-component-main     | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/nft-preview-card-component-main/) |
+| product-preview-card-component-main | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/product-preview-card-component-main/) |
+| qr-code-component-main              | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/qr-code-component-main/) |
+| recipe-page-main                    | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/recipe-page-main/) |
+| results-summary-component-main      | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/results-summary-component-main/) |
+| social-links-profile-main           | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/social-links-profile-main/) |
 
 ---
 
@@ -26,7 +26,7 @@ The 3-column preview card component project focuses on designing an elegant and 
 
 ### Output
 
-![Link to 3-column-preview-card Images](./outputs/3-column-preview-card.png)
+![Link to 3-column-preview-card Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_3-column-preview-card-component-main_.png)
 
 ---
 
@@ -40,7 +40,7 @@ The blog preview card project focuses on designing a clean and informative UI co
 
 ### Output
 
-![Link to blog-preview-card Images](./outputs/blog-preview-card.png)
+![Link to blog-preview-card Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_blog-preview-card-main_.png)
 
 ---
 
@@ -54,7 +54,7 @@ The calculator app project focuses on creating a user-friendly interface for per
 
 ### Output
 
-![Link to calculator-app Images](./outputs/calculator-app.png)
+![Link to calculator-app Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_calculator-app-main_.png)
 
 ---
 
@@ -68,7 +68,7 @@ The FAQ accordion project focuses on designing a dynamic and intuitive UI compon
 
 ### Output
 
-![Link to faq-accordion Images](./outputs/faq-accordion.png)
+![Link to faq-accordion Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_faq-accordion-main_.png)
 
 ---
 
@@ -82,7 +82,7 @@ The interactive rating component project focuses on creating an engaging and vis
 
 ### Output
 
-![Link to interactive-rating-component Images](./outputs/interactive-rating-component.png)
+![Link to interactive-rating-component Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_interactive-rating-component-main_.png)
 
 ---
 
@@ -96,7 +96,7 @@ The NFT preview card component project focuses on creating a visually striking a
 
 ### Output
 
-![Link to nft-preview-card-component Images](./outputs/nft-preview-card-component.png)
+![Link to nft-preview-card-component Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_nft-preview-card-component-main_.png)
 
 ---
 
@@ -110,7 +110,7 @@ The product preview card component project focuses on designing an eye-catching 
 
 ### Output
 
-![Link to product-preview-card-component Images](./outputs/product-preview-card-component.png)
+![Link to product-preview-card-component Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_product-preview-card-component-main_.png)
 
 ---
 
@@ -124,7 +124,7 @@ The QR code component project focuses on creating a versatile and user-friendly 
 
 ### Output
 
-![Link to qr-code-component Images](./outputs/qr-code-component.png)
+![Link to qr-code-component Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_qr-code-component-main_.png)
 
 ---
 
@@ -138,7 +138,7 @@ The recipe page project focuses on designing a user-friendly and engaging interf
 
 ### Output
 
-![Link to recipe-page Images](./outputs/recipe-page.png)
+![Link to recipe-page Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_recipe-page-main_.png)
 
 ---
 
@@ -152,7 +152,7 @@ The results summary component project focuses on designing a flexible and custom
 
 ### Output
 
-![Link to results-summary-component Images](./outputs/results-summary-component.png)
+![Link to results-summary-component Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_results-summary-component-main_.png)
 
 ---
 
@@ -166,4 +166,4 @@ The social links profile project focuses on designing a modern and user-friendly
 
 ### Output
 
-![Link to social-links-profile Images](./outputs/social-links-profile.png)
+![Link to social-links-profile Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_social-links-profile-main_.png)
