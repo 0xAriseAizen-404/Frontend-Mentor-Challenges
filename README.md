@@ -168,6 +168,7 @@ The social links profile project focuses on designing a modern and user-friendly
 
 ![Link to social-links-profile Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_social-links-profile-main_.png)
 
+### Copyright
 
 Copyright © [2024] [arise-aizen](https://github.com/arise-aizen-404).
 
