@@ -168,15 +168,15 @@ The social links profile project focuses on designing a modern and user-friendly
 
 ### Output
 
-![Link to social-links-profile Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_advice-generator-app-main_.png)
+![Link to social-links-profile Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_social-links-profile-main_.png)
 
 ## advice-generator-app-main
 
 ### Output
 
-![Link to advice-generator-app Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_social-links-profile-main_.png)
+![Link to advice-generator-app Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_advice-generator-app-main_.png)
 
-## huddle-react-main/aa-huddle-react.netlify.app\_.png
+## huddle-react-main
 
 ### Output
 
