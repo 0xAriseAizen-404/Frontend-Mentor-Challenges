@@ -14,6 +14,7 @@
 | results-summary-component-main       | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/results-summary-component-main/)       |
 | social-links-profile-main            | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/social-links-profile-main/)            |
 | advice-generator-app-main            | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/advice-generator-app-main/)            |
+| huddle-react-main                    | [Live Demo](/)                                                                                                  |
 
 ---
 
@@ -174,6 +175,12 @@ The social links profile project focuses on designing a modern and user-friendly
 ### Output
 
 ![Link to advice-generator-app Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_social-links-profile-main_.png)
+
+## huddle-react-main/aa-huddle-react.netlify.app\_.png
+
+### Output
+
+![Link to huddle-react-main Images](./outputs/aa-huddle-react.netlify.app_.png)
 
 ### Copyright
 
