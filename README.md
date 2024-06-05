@@ -13,6 +13,7 @@
 | recipe-page-main                    | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/recipe-page-main/) |
 | results-summary-component-main      | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/results-summary-component-main/) |
 | social-links-profile-main           | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/social-links-profile-main/) |
+| advice-generator-app-main           | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/advice-generator-app-main/) |
 
 ---
 

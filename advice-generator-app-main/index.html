@@ -1,28 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 1rem;
+      font-size: 28px;
+      font-family: "Manrope", sans-serif;
+      background-color: hsl(218, 23%, 16%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .advice-con {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 450px;
+      text-align: center;
+      padding: 1rem 1rem 3rem 1rem;
+      border-radius: .5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      position: relative;
+      background-color: hsl(217, 19%, 24%);
+    }
+
+    .advice-con .title {
+      color: hsl(150, 100%, 66%);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: medium;
+      font-weight: 600;
+    }
+
+    .advice-con #advice {
+      font-weight: 800;
+      font-family: inherit;
+      color: hsl(193, 38%, 86%);
+    }
+
+    .advice-con button {
+      background-color: hsl(228, 45%, 44%);
+      cursor: pointer;
+      position: absolute;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: hsl(150, 100%, 66%);
+    }
+
+    .advice-con button:is(:hover, :active) {
+      box-shadow: 0 0 10px hsl(150, 100%, 66%);
+    }
+
+    .advice-con button:focus {
+      outline: none;
+    }
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  <div class="advice-con">
+    <span class="title">
+      advice #
+      <span id="id"></span>
+    </span>
+    <p id="advice"></p>
+    <img src="./images/pattern-divider-desktop.svg" alt="">
+    <button id="newAdvice">
+      <img src="./images/icon-dice.svg" alt="">
+    </button>
+  </div>
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+<script>
+  const advice = document.getElementById("advice")
+  const newAdvice = document.getElementById("newAdvice")
+  const id = document.getElementById("id")
+
+  const generateAdvice = () => {
+    fetch("https://api.adviceslip.com/advice")
+      .then((res) => res.json())
+      .then((data) => {
+        advice.textContent = `"${data.slip.advice}"`;
+        id.textContent = data.slip.id
+      })
+  }
+
+  newAdvice.addEventListener("click", generateAdvice)
+
+  window.onload = generateAdvice()
+</script>
+
 </html>
