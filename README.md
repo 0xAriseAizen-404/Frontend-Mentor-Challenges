@@ -1,19 +1,19 @@
 # Project List
 
-| Project Name                        | Live Demo |
-|------------------------------------ |-----------|
-| 3-column-preview-card-component-main | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/3-column-preview-card-component-main/)          |
-| blog-preview-card-main              | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/blog-preview-card-main/)             |
-| calculator-app-main                 | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/calculator-app-main/) |
-| faq-accordion-main                  | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/faq-accordion-main/) |
-| interactive-rating-component-main   | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/interactive-rating-component-main/) |
-| nft-preview-card-component-main     | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/nft-preview-card-component-main/) |
-| product-preview-card-component-main | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/product-preview-card-component-main/) |
-| qr-code-component-main              | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/qr-code-component-main/) |
-| recipe-page-main                    | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/recipe-page-main/) |
-| results-summary-component-main      | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/results-summary-component-main/) |
-| social-links-profile-main           | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/social-links-profile-main/) |
-| advice-generator-app-main           | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/advice-generator-app-main/) |
+| Project Name                         | Live Demo                                                                                                       |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| 3-column-preview-card-component-main | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/3-column-preview-card-component-main/) |
+| blog-preview-card-main               | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/blog-preview-card-main/)               |
+| calculator-app-main                  | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/calculator-app-main/)                  |
+| faq-accordion-main                   | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/faq-accordion-main/)                   |
+| interactive-rating-component-main    | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/interactive-rating-component-main/)    |
+| nft-preview-card-component-main      | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/nft-preview-card-component-main/)      |
+| product-preview-card-component-main  | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/product-preview-card-component-main/)  |
+| qr-code-component-main               | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/qr-code-component-main/)               |
+| recipe-page-main                     | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/recipe-page-main/)                     |
+| results-summary-component-main       | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/results-summary-component-main/)       |
+| social-links-profile-main            | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/social-links-profile-main/)            |
+| advice-generator-app-main            | [Live Demo](https://arise-aizen-404.github.io/Frontend-Mentor-Challenges/advice-generator-app-main/)            |
 
 ---
 
@@ -167,7 +167,13 @@ The social links profile project focuses on designing a modern and user-friendly
 
 ### Output
 
-![Link to social-links-profile Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_social-links-profile-main_.png)
+![Link to social-links-profile Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_advice-generator-app-main_.png)
+
+## advice-generator-app-main
+
+### Output
+
+![Link to advice-generator-app Images](./outputs/arise-aizen-404.github.io_Frontend-Mentor-Challenges_social-links-profile-main_.png)
 
 ### Copyright
 
